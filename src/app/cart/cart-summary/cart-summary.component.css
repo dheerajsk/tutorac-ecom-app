@@ -1,0 +1,34 @@
+
+.cart_summary{
+  width: 100%;
+  border-left: 1px solid lightblue;
+  background-color: lightseagreen;
+  padding: 12px;
+  margin-top: 12px;
+}
+
+p{
+  color: black;
+  background-color: orange;
+  margin: 18px 6px;
+  padding: 6px;
+}
+
+.totalPrice{
+  background-color: greenyellow;
+  color: black;
+  padding: 12px;
+  width: 100%;
+}
+
+.summary_container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn-container{
+  margin: 12px;
+  padding: 12px;
+  justify-content: center;
+}

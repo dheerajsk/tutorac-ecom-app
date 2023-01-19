@@ -1,0 +1,14 @@
+
+.btn-cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-greaterThan50{
+  background-color: orange;
+}
+
+.btn-lessThanEq50{
+  background-color: lightblue;
+}

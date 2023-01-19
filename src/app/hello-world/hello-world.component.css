@@ -1,0 +1,13 @@
+
+p{
+  background-color: darkolivegreen;
+  color: red;
+  font-size: x-large;
+  border: 1px solid black;
+  padding: 12px;
+}
+
+.text{
+  margin: 10%;
+  width: 50%;
+}

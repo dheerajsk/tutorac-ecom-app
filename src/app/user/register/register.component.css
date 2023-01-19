@@ -1,0 +1,21 @@
+
+.container{
+  margin-top: 48px;
+}
+
+.register{
+  margin-top: 48px;
+  border-left: 1px solid lightblue;
+  padding: 24px;
+}
+
+.form{
+  margin-top: 24px;
+}
+
+.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

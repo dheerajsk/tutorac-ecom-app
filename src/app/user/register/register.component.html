@@ -1,0 +1,31 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-6 left">
+      <h1>E-Cart</h1>
+    </div>
+    <div class="col-6">
+      <div class="register">
+        <h3 class="mb-3">Please register to get started.</h3>
+        <hr />
+        <form>
+          <div class="mb-3">
+            <label for="username" class="form-label">Enter your name</label>
+            <input class="form-control" name="username">
+          </div>
+          <div class="mb-3">
+            <label for="useremail" class="form-label">Enter your email</label>
+            <input type="email" [value]="this.user.useremail" name="useremail" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Enter your password</label>
+            <input type="password" [value]="this.user.password" name="password" class="form-control">
+          </div>
+
+          <button (click)="handleRegister()" class="btn btn-success float-end" type="button">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
