@@ -8,15 +8,15 @@
       <div class="login">
         <h3 class="mb-3">Please login to get started.</h3>
         <hr />
-        <form>
+        <form #loginForm="ngForm" (submit)="handleFormSubmit()">
 
           <div class="mb-3">
             <label for="useremail" class="form-label">Enter your email</label>
-            <input type="email" name="useremail" class="form-control">
+            <input type="email" [(ngModel)]="this.user.email" name="email" class="form-control">
           </div>
           <div class="mb-3">
             <label for="password" class="form-label">Enter your password</label>
-            <input type="password" name="password" class="form-control">
+            <input type="password" [(ngModel)]="this.user.password" name="password" class="form-control">
           </div>
 
           <button class="btn btn-warning float-end" type="submit">Login</button>

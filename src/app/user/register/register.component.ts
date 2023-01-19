@@ -1,5 +1,6 @@
-import { UserModel } from './../user.model';
+
 import { Component } from '@angular/core';
+import { UserModel } from '../user.model';
 
 @Component({
   selector: 'app-register',
@@ -9,18 +10,17 @@ import { Component } from '@angular/core';
 export class RegisterComponent {
 
   user:UserModel;
-  str:any;
 
   constructor(){
-    this.user = new UserModel("", "", "");
+    this.user = new UserModel("","","");
   }
 
-  handleRegister(){
+  handleInput(event:any){
+    this.user.name = event.target.value;
+  }
+
+  handleSubmit(){
     console.log(this.user);
-  }
-
-  handleNameChange(event:any){
-    this.user.username=event.target.value;
   }
 
 }
