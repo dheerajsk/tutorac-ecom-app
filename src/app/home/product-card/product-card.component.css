@@ -12,3 +12,7 @@
 .btn-lessThanEq50{
   background-color: lightblue;
 }
+
+img{
+  max-height: 150px;
+}

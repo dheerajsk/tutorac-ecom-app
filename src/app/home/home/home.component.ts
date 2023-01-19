@@ -2,6 +2,7 @@ import { ProductService } from './../../services/product.service';
 import { CartService } from './../../services/cart.service';
 import { Component } from '@angular/core';
 import { ProductModel } from '../product-card/product.model';
+import { ProductHttpService } from 'src/app/services/product-http.service';
 
 @Component({
   selector: 'app-home',
@@ -11,16 +12,17 @@ import { ProductModel } from '../product-card/product.model';
 export class HomeComponent {
   products: ProductModel[];
 
-  constructor(private productService: ProductService){
+  constructor(
+    private productHttpService: ProductHttpService,
+    private productService: ProductService){
     this.products=[];
-    this.productService.get().subscribe(
+   
+    this.productHttpService.get().subscribe(
       (result)=>{
         this.products=result;
-        console.log(this.products);
-        console.log(this.products.length);
+        this.productService.set(this.products);
       }
     )
-
   }
 
   handleAddToCartEvent(name:any){
